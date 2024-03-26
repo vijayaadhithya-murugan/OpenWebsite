@@ -1,6 +1,6 @@
 const AboutMe = () => {
     return(
-        <>About Me</>
+        <>An aspiring full stack web developer having expertise in MERN stack, ELK</>
     );
 };
 
