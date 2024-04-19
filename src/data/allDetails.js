@@ -4,7 +4,7 @@ export const contactDetails ={
     "pincode": "626-123",
     "mobile": "+91-9487476052",
     "gmail": "m.vijayaadhithya@gmail.com",
-    "linkedIn":"https://www.linkedin.com/in/vijayaadhithya-353b611ab",
+    "linkedIn":"www.linkedin.com/in/vijay-aadhithya",
     "github": "https://github.com/vijayaadhithya-murugan",
     "twitter": "https://twitter.com/aadhithya_vijay"
 };
