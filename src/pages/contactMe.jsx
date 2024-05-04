@@ -6,9 +6,11 @@ const ContactMe = () => {
     return(
         <div className="footer-container">
         <div className="right-align">
+        <>Address</><br />
         <>{contactDetails.address}</><br/>
         <>{contactDetails.city}</>
         <>{' '}{contactDetails.pincode}</><br/>
+        <>Contact Number</><br />
         <>{contactDetails.mobile}</><br/>
         </div>
         <ul className="footer_list">

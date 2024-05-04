@@ -4,9 +4,10 @@ const NavBar = () =>{
     return(
         <nav>
         <ul className="navbar_styles">
-        <li>
+            <h3>Vijay Aadhithya</h3>
+        {/* <li>
             <NavLink to="/OpenWebsite/">Home</NavLink>
-            </li>
+            </li> */}
             <li><NavLink to="/OpenWebsite/about">About Me</NavLink></li>
             <li><NavLink to="/OpenWebsite/education">Education</NavLink></li>
             <li><NavLink to="/OpenWebsite/experience">Experience</NavLink></li>
