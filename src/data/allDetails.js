@@ -41,7 +41,7 @@ export const workExperience = [
         "company": "Ramco Systems Limited",
         "role": "Analyst Programmer",
         "work-period": "August 2023 - Present",
-        "duration": "7 months"
+        "duration": "1 year"
     }
 ];
 
