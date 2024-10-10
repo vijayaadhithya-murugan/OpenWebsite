@@ -4,7 +4,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Typography } from '@mui/material';
 
-
 // Styled components for the card
 // const CardContainer = styled.div`
 //   border: 1px solid #ccc;
@@ -25,10 +24,14 @@ import { Typography } from '@mui/material';
 // Reusable React card component
 const ReusableCard = ({ title, content }) => {
   return (
-    <Card variant='outlined'>
+    <Card variant="outlined">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">{title}</Typography>
-        <Typography variant="body2" color="text.secondary">{content}</Typography>
+        <Typography gutterBottom variant="h5" component="div">
+          {title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {content}
+        </Typography>
       </CardContent>
     </Card>
   );
