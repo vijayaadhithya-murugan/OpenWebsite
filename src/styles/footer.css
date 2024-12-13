@@ -25,21 +25,22 @@ html, body {
 }
 
 .footer {
-    /* position: fixed; */
-    position:absolute;
-    left:0;
-    bottom:0;
-    right:0;
-  }
+  /* position: fixed; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
-.card-align{
+.card-align {
   display: flex;
 }
 
-.wd-100{
+.wd-100 {
   width: 100%;
 }
 
+.footer-container {
 .footer-container {
   background-color: rgb(214, 252, 0);
   width: 100%; /* Ensure it takes up the full width */
@@ -52,33 +53,33 @@ html, body {
 }
 
 
-.footer_list{
+.footer_list {
   list-style-type: none;
 }
 
-.ml-three-s{
+.ml-three-s {
   display: flex;
   margin-left: 1px;
 }
 
-.active{
+.active {
   background: #0e0e0e;
   color: white;
   border-radius: 2rem;
   display: inline-block;
 }
 
-.navbar_styles{
+.navbar_styles {
   display: flex;
   list-style-type: none;
   gap: 190px;
 }
 
-a{
+a {
   margin-right: 3px;
 }
 
-li{
+li {
   margin-right: 3px;
   margin-top: 20px;
 }
