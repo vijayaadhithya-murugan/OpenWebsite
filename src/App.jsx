@@ -15,9 +15,10 @@ import NavBar from "./components/navBar";
 
 function App() {
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
     <Router>
     <NavBar />
+    <div style={{ flex: 1 }}>
         <Routes>
           {/* <Route exact path="/OpenWebsite" element={<Home />}></Route> */}
           <Route exact path="/OpenWebsite/about" element={<AboutMe />}></Route>
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/OpenWebsite/personal" element={<Personal />}></Route>
           <Route exact path="/OpenWebsite/skills" element={<SkillSet />}></Route>
         </Routes>
+        </div>
     </Router>
         <ContactMe />
     </div>
