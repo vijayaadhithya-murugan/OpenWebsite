@@ -16,11 +16,11 @@ function App() {
     <div style={{ flex: 1 }}>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route path="/OpenWebsite/about" element={<AboutMe />}></Route>
-          <Route path="/OpenWebsite/education" element={<Education />}></Route>
-          <Route path="/OpenWebsite/experience" element={<Experience />}></Route>
-          <Route path="/OpenWebsite/personal" element={<Personal />}></Route>
-          <Route path="/OpenWebsite/skills" element={<SkillSet />}></Route>
+          <Route path="/about" element={<AboutMe />}></Route>
+          <Route path="/education" element={<Education />}></Route>
+          <Route path="/experience" element={<Experience />}></Route>
+          <Route path="/personal" element={<Personal />}></Route>
+          <Route path="/skills" element={<SkillSet />}></Route>
         </Routes>
         </div>
     </Router>
