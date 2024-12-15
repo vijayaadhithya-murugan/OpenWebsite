@@ -11,16 +11,16 @@ import NavBar from './components/navBar';
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-    <Router>
+    <Router basename="/OpenWebsite">
     <NavBar />
     <div style={{ flex: 1 }}>
         <Routes>
-          {/* <Route exact path="/OpenWebsite" element={<Home />}></Route> */}
-          <Route exact path="/OpenWebsite/about" element={<AboutMe />}></Route>
-          <Route exact path="/OpenWebsite/education" element={<Education />}></Route>
-          <Route exact path="/OpenWebsite/experience" element={<Experience />}></Route>
-          <Route exact path="/OpenWebsite/personal" element={<Personal />}></Route>
-          <Route exact path="/OpenWebsite/skills" element={<SkillSet />}></Route>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route path="/OpenWebsite/about" element={<AboutMe />}></Route>
+          <Route path="/OpenWebsite/education" element={<Education />}></Route>
+          <Route path="/OpenWebsite/experience" element={<Experience />}></Route>
+          <Route path="/OpenWebsite/personal" element={<Personal />}></Route>
+          <Route path="/OpenWebsite/skills" element={<SkillSet />}></Route>
         </Routes>
         </div>
     </Router>
