@@ -68,12 +68,6 @@ html, body {
   display: inline-block;
 }
 
-.navbar_styles {
-  display: flex;
-  list-style-type: none;
-  gap: 190px;
-}
-
 a {
   margin-right: 3px;
 }
