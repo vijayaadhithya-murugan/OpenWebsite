@@ -1,3 +1,12 @@
+import { FaReact } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
+import { FaPython } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiElasticsearch } from "react-icons/si";
+import { TbBrandPython } from "react-icons/tb";
+import { FaLinux } from "react-icons/fa6";
+import { FaDocker } from "react-icons/fa";
+
 export const contactDetails = {
   address: '2/2310 Y Graghathaiammal Nagar',
   city: 'Sivakasi',
@@ -48,35 +57,43 @@ export const workExperience = [
 export const skillSet = [
   {
     skill: 'React js',
-    level: 'Advanced'
+    level: 'Advanced',
+    icon: <FaReact />
   },
   {
     skill: 'MongoDB',
-    level: 'Advanced'
+    level: 'Advanced',
+    icon: <DiMongodb />
   },
   {
     skill: 'Python',
-    level: 'Advanced'
+    level: 'Advanced',
+    icon: <FaPython />
   },
   {
     skill: 'Node js',
-    level: 'Advanced'
+    level: 'Advanced',
+    icon: <FaNodeJs />
   },
   {
     skill: 'Elastic',
-    level: 'Beginner'
+    level: 'Beginner',
+    icon: <SiElasticsearch />
   },
   {
     skill: 'Python-Playwright',
-    level: 'Beginner'
+    level: 'Beginner',
+    icon: <TbBrandPython />
   },
   {
     skill: 'WSL',
-    level: 'Beginner'
+    level: 'Beginner',
+    icon: <FaLinux />
   },
   {
     skill: 'Docker',
-    level: 'Beginner'
+    level: 'Beginner',
+    icon: <FaDocker />
   }
 ];
 

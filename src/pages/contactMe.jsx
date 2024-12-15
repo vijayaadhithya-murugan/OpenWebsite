@@ -1,6 +1,10 @@
 import { contactDetails } from '../data/allDetails';
 import '../styles/footer.css';
-import Twitter from '../assets/twitter.jsx';
+
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 
 const ContactMe = () => {
   return (
@@ -20,16 +24,16 @@ const ContactMe = () => {
       </div>
       <ul className="footer_list">
         <li>
-          <a href={`mailto:${contactDetails.gmail}`}>Mail</a>
+          <a href={`mailto:${contactDetails.gmail}`}><BiLogoGmail /> Mail</a>
         </li>
         <li>
-          <a href={contactDetails.linkedIn}>LinkedIn</a>
+          <a href={contactDetails.linkedIn}><FaLinkedinIn /> LinkedIn</a>
         </li>
         <li>
-          <a href={contactDetails.github}>GitHub</a>
+          <a href={contactDetails.github}><FaGithub /> GitHub</a>
         </li>
         <li>
-          <a href={contactDetails.twitter}>Twitter</a>
+          <a href={contactDetails.twitter}><FaSquareXTwitter /> Twitter</a>
         </li>
       </ul>
     </div>

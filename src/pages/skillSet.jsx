@@ -24,10 +24,15 @@ const SkillsCard = styled(Card)`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 300px;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const SkillsCardContent = styled(CardContent)`
   padding: 1.5rem !important;
+  text-align: center;
 `;
 
 const SkillSet = () => {
@@ -37,10 +42,13 @@ const SkillSet = () => {
         <SkillsCard key={e.skill} delay={`${index * 0.2}s`}>
           <SkillsCardContent>
             <Typography gutterBottom variant="h5" component="div">
+              {e.icon}
+            </Typography>
+            <Typography variant="h6" component="div">
               {e.skill}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {`${e.level}`}
+              {e.level}
             </Typography>
           </SkillsCardContent>
         </SkillsCard>
