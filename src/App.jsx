@@ -10,6 +10,7 @@ import NavBar from './components/navBar';
 
 function App() {
   return (
+    // Main branch
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
     <Router basename="/OpenWebsite">
     <NavBar />
