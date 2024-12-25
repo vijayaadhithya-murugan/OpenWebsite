@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, HashRouter } from 'react-router-dom';
 import Home from './pages/home';
 import AboutMe from './pages/aboutMe';
 import ContactMe from './pages/contactMe';
@@ -12,7 +12,8 @@ function App() {
   return (
     // Main branch After rule enabled
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-    <Router basename="/OpenWebsite">
+    {/* <Router basename="/OpenWebsite"> */}
+    <HashRouter basename="/">
     <NavBar />
     <div style={{ flex: 1 }}>
         <Routes>
@@ -24,7 +25,8 @@ function App() {
           <Route path="/skills" element={<SkillSet />}></Route>
         </Routes>
         </div>
-    </Router>
+        </HashRouter>
+    {/* </Router> */}
         <ContactMe />
     </div>
   );
