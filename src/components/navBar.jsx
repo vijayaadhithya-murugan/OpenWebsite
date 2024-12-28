@@ -6,9 +6,9 @@ const NavBar = () => {
     <nav>
       <ul className="navbar_styles">
         <h3>Vijay Aadhithya</h3>
-        {/* <li>
-            <NavLink to="/OpenWebsite/">Home</NavLink>
-            </li> */}
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
         <li>
           <NavLink to="/about">About Me</NavLink>
         </li>
@@ -28,4 +28,5 @@ const NavBar = () => {
     </nav>
   );
 };
+
 export default NavBar;
