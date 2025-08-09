@@ -6,6 +6,7 @@ import { SiElasticsearch } from "react-icons/si";
 import { TbBrandPython } from "react-icons/tb";
 import { FaLinux } from "react-icons/fa6";
 import { FaDocker } from "react-icons/fa";
+import { DiMsqlServer } from "react-icons/di";
 
 export const contactDetails = {
   address: '2/2310 Y Graghathaiammal Nagar',
@@ -107,6 +108,11 @@ export const skillSet = [
     skill: 'Node js',
     level: 'Advanced',
     icon: <FaNodeJs />
+  },
+  {
+    skill: 'MS SQL',
+    level: 'Intermediate',
+    icon: <DiMsqlServer />
   },
   {
     skill: 'Elastic',
