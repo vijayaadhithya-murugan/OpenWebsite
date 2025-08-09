@@ -1,51 +1,105 @@
+import React from 'react';
 import { educationDetails } from '../data/allDetails';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import { Typography } from '@mui/material';
-import { keyframes, styled } from 'styled-components';
-
-const fadeInUp = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
+import { 
+  PageContainer, 
+  SectionContainer, 
+  PageTitle, 
+  GridContainer,
+  Card, 
+  CardTitle, 
+  CardSubtitle,
+  CardText, 
+  Badge,
+  FlexContainer
+} from '../components/StyledComponents';
+import styled from 'styled-components';
+import { theme } from '../styles/theme';
 
 const EducationCard = styled(Card)`
-  opacity: 0;
-  animation: ${fadeInUp} 0.5s ease-in-out forwards;
-  animation-delay: ${(props) => props.delay || '0s'};
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 1rem;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(135deg, ${theme.colors.success[500]}, ${theme.colors.success[400]});
+  }
 `;
 
-const EducationCardContent = styled(CardContent)`
-  padding: 1.5rem !important;
+const GradeDisplay = styled.div`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing.sm};
+  margin-top: ${theme.spacing.md};
+  
+  .grade {
+    font-size: ${theme.typography.fontSize.xl};
+    font-weight: ${theme.typography.fontWeight.bold};
+    color: ${theme.colors.success[600]};
+  }
+  
+  .label {
+    font-size: ${theme.typography.fontSize.sm};
+    color: ${theme.colors.neutral[600]};
+  }
+`;
+
+const YearBadge = styled(Badge)`
+  position: absolute;
+  top: ${theme.spacing.lg};
+  right: ${theme.spacing.lg};
+`;
+
+const InstitutionText = styled(CardText)`
+  font-style: italic;
+  color: ${theme.colors.primary[600]};
+  font-weight: ${theme.typography.fontWeight.medium};
 `;
 
 const Education = () => {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', padding: '2rem' }}>
-      {educationDetails.map((e, index) => (
-        <EducationCard key={e.course} delay={`${index * 0.2}s`}>
-          <EducationCardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {e.course}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {`${e.institution} ${e.year} ${e.grade}`}
-            </Typography>
-          </EducationCardContent>
-        </EducationCard>
-      ))}
-    </div>
+    <PageContainer>
+      <SectionContainer>
+        <PageTitle>Education</PageTitle>
+        
+        <GridContainer>
+          {educationDetails.map((education, index) => (
+            <EducationCard key={education.course} delay={`${index * 0.2}s`}>
+              <YearBadge variant="success">{education.year}</YearBadge>
+              
+              <CardTitle>{education.course}</CardTitle>
+              <InstitutionText>{education.institution}</InstitutionText>
+              
+              <GradeDisplay>
+                <span className="grade">{education.grade}</span>
+                <span className="label">Overall Grade</span>
+              </GradeDisplay>
+            </EducationCard>
+          ))}
+        </GridContainer>
+
+        <Card delay="0.8s" style={{ marginTop: theme.spacing['2xl'] }}>
+          <CardTitle>Academic Highlights</CardTitle>
+          <FlexContainer direction="column" gap={theme.spacing.md}>
+            <CardText>
+              🎓 <strong>Consistent Performance:</strong> Maintained strong academic performance throughout 
+              my educational journey, with a notable CGPA of 8.6 in my engineering degree.
+            </CardText>
+            <CardText>
+              💻 <strong>Technical Foundation:</strong> Built a solid foundation in computer science fundamentals, 
+              including data structures, algorithms, software engineering, and database management.
+            </CardText>
+            <CardText>
+              🏆 <strong>Practical Learning:</strong> Actively participated in coding competitions and 
+              personal projects during college, applying theoretical knowledge to real-world problems.
+            </CardText>
+          </FlexContainer>
+        </Card>
+      </SectionContainer>
+    </PageContainer>
   );
 };
 

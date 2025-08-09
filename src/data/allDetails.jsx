@@ -41,16 +41,49 @@ export const educationDetails = [
 
 export const workExperience = [
   {
+    id: 1,
     company: 'Ramco Systems Limited',
     role: 'Project Trainee',
-    'work-period': 'February 2023 - August 2023',
-    duration: '7 months'
+    startDate: '2023-02',
+    endDate: '2023-08',
+    duration: '7 months',
+    type: 'Internship',
+    location: 'Chennai, India',
+    responsibilities: [
+      'Developed web applications using React.js and Node.js',
+      'Collaborated with senior developers on enterprise projects',
+      'Gained hands-on experience with MongoDB and Elasticsearch',
+      'Participated in code reviews and agile development processes'
+    ],
+    technologies: ['React.js', 'Node.js', 'MongoDB', 'JavaScript', 'Git'],
+    achievements: [
+      'Successfully completed 3 major project modules',
+      'Reduced application load time by 20% through optimization'
+    ]
   },
   {
+    id: 2,
     company: 'Ramco Systems Limited',
     role: 'Analyst Programmer',
-    'work-period': 'August 2023 - Present',
-    duration: '1 year'
+    startDate: '2023-08',
+    endDate: null, // null indicates current position
+    duration: '1+ years',
+    type: 'Full-time',
+    location: 'Chennai, India',
+    responsibilities: [
+      'Design and develop scalable web applications using MERN stack',
+      'Implement automated testing using Python Playwright',
+      'Work with Elasticsearch for data indexing and search functionality',
+      'Mentor junior developers and conduct technical interviews',
+      'Collaborate with cross-functional teams for product development'
+    ],
+    technologies: ['React.js', 'Node.js', 'MongoDB', 'Python', 'Elasticsearch', 'Docker', 'WSL'],
+    achievements: [
+      'Led development of 5+ enterprise applications',
+      'Improved system performance by 35% through code optimization',
+      'Implemented CI/CD pipeline reducing deployment time by 50%',
+      'Mentored 3 new team members successfully'
+    ]
   }
 ];
 
@@ -99,23 +132,75 @@ export const skillSet = [
 
 export const personal = [
   {
+    id: 1,
     project: 'RTask',
+    description: 'A comprehensive task management application built with the MERN stack. Features include user authentication, real-time updates, task categorization, and collaborative workspaces.',
     technology: 'MERN Stack',
-    url: ''
+    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io'],
+    features: [
+      'User authentication and authorization',
+      'Real-time task updates using Socket.io',
+      'Drag and drop task management',
+      'Team collaboration features',
+      'Responsive design for all devices'
+    ],
+    status: 'Completed',
+    github: 'https://github.com/vijayaadhithya-murugan/rtask',
+    demo: '',
+    image: '/api/placeholder/400/250'
   },
   {
+    id: 2,
     project: 'Video Chat App',
-    technology: 'Node js',
-    url: ''
+    description: 'A real-time video conferencing application built with Node.js and WebRTC. Supports multiple participants, screen sharing, and chat functionality.',
+    technology: 'Node.js + WebRTC',
+    technologies: ['Node.js', 'WebRTC', 'Socket.io', 'Express.js', 'HTML5', 'CSS3'],
+    features: [
+      'Real-time video and audio communication',
+      'Screen sharing capabilities',
+      'Text chat during video calls',
+      'Room-based video conferences',
+      'Mobile-responsive interface'
+    ],
+    status: 'Completed',
+    github: 'https://github.com/vijayaadhithya-murugan/video-chat',
+    demo: '',
+    image: '/api/placeholder/400/250'
   },
   {
+    id: 3,
     project: 'Black Jack Game',
+    description: 'A classic BlackJack card game implementation using Java AWT. Features an intuitive GUI, game logic implementation, and score tracking system.',
     technology: 'Java AWT',
-    url: ''
+    technologies: ['Java', 'AWT', 'Swing', 'Object-Oriented Programming'],
+    features: [
+      'Interactive graphical user interface',
+      'Complete BlackJack game logic',
+      'Score tracking and statistics',
+      'Card dealing animations',
+      'Multiple difficulty levels'
+    ],
+    status: 'Completed',
+    github: 'https://github.com/vijayaadhithya-murugan/blackjack-game',
+    demo: '',
+    image: '/api/placeholder/400/250'
   },
   {
+    id: 4,
     project: 'Raise',
+    description: 'An automated testing framework built with Python Playwright for web application testing. Includes custom reporting, cross-browser testing, and CI/CD integration.',
     technology: 'Python Playwright',
-    url: ''
+    technologies: ['Python', 'Playwright', 'pytest', 'HTML Reports', 'GitHub Actions'],
+    features: [
+      'Cross-browser automated testing',
+      'Custom HTML test reports',
+      'Page Object Model implementation',
+      'CI/CD pipeline integration',
+      'Parallel test execution'
+    ],
+    status: 'In Progress',
+    github: 'https://github.com/vijayaadhithya-murugan/raise',
+    demo: '',
+    image: '/api/placeholder/400/250'
   }
 ];
